@@ -89,10 +89,7 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 2px solid #ff385c;
+  border: 2px solid #FF385C;
   padding: 10px;
 }
 
@@ -100,18 +97,22 @@ form label {
   font-weight: bold;
 }
 
-form select,
-form input {
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form select, form input {
   margin-bottom: 20px;
-  width: 80%;
+  width: 140px;
 }
 
 form button {
-  background-color: #ff385c;
+  background-color: #FF385C;
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
 }
 
@@ -131,52 +132,48 @@ footer p {
 
 @media all and (min-width: 480px) {
   header {
-    background-color: #ff385c;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
-  header nav {
-    padding: 15px;
+/* completely removed previous code */
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 52px;
   }
 
-  form {
-    flex-direction: row;
+  form select, form input {
+    margin-bottom: 20px;
+    width: 180px;
   }
-
-  .group {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: row nowrap;
+  
+  header nav ul {
     align-items: center;
   }
 
-  .vacation-form .item {
-    display: flex block;
-    flex: 1 1 auto;
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form div {
     flex-direction: column;
   }
 
-  .item label
-  , .item input 
-  , .item select 
-  , .item button{
-    display: flex;
-    width: 100%
-  }
-
-  .grid-column {
-    display: flex;
+  form button {
     flex: 1;
-    flex-direction: column; 
-    margin: 10px;
   }
-
-  .grid-row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+  
+  form select, form input {
+    margin-bottom: 0px;
   }
 }
