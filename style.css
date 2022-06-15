@@ -62,10 +62,14 @@ header {
   font-size: 50px;
   color: #fff;
 }
-
+/* --- added missing nav --- */
+header nav {
+  dispaly: flex;
+  justify-content: center;
+}
+/* --- deleted extra flex direction ---*/
 header nav ul {
   display: flex;
-  justify-content: center;
 }
 
 header nav ul li {
@@ -77,10 +81,7 @@ header nav ul li a {
   text-decoration: none;
   padding: 0 20px 0 0;
 }
-
-header nav ul li:last-child a {
-  margin-right: 20px;
-}
+/* ----deleted erroring code ---- */ 
 
 header nav ul li a:hover {
   color: #bdbdbd;
